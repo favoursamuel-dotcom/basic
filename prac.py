@@ -27,6 +27,8 @@ print(calculate_inventory())
 client = OpenAI(api_key="<OPENAI_API_TOKEN>")
 
 # Create a request to complete the story
+story = "Leo the little bear loved looking at the shiny stars every single night.He always wished he could touch one because they " \
+"looked so soft and bright.One evening, he saw a beautiful shooting star fall quickly into the deep forest.He ran through the tall trees and happily found a glowing, magical star flower on the ground.Leo hugged the warm flower tightly and knew his special dream had finally come true."
 prompt = f"Complete the story(in triple backticks delimeters) with two paragraph in the style of shakespeare: ```{story}```"
 
 # Get the generated response
@@ -42,7 +44,7 @@ instructions = "Infer the language and the number of sentences of the given deli
 
 # Create the output format
 output_format = "Include the text, language, number of sentences, and title, each on a separate line,and ensure to use 'Text:', 'Language:', and 'Title:' as prefixes for each line."
-
+text = "Text:', 'Language:', and 'Title:' as prefixes for each line"
 prompt = instructions + output_format + f"```{text}```"
 response = get_response(prompt)
 print(response) 

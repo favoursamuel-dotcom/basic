@@ -159,7 +159,6 @@ if "Jimin" in bangtan.keys():
     print("True")
 elif "Jimin" not in bangtan.items():
     print("false")
-sets: unordered
 bulletproof = ["im", "Kim", "Min", "Jung", "Park", "Kim", "Jeon"]
 print(bulletproof.index("Jung"))
 for name in bulletproof:
