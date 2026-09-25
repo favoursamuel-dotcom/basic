@@ -1,279 +1,248 @@
-"""
-message = "\tHello Python"
-print(message)
+# 
 
-name = "\tfavour nya"
-print(name.upper())
-
-age = "20"
-details = f"{name} \n\t{age}"
-print(details)
-
-print(4*5)
-print(4**3)
-"""
-print("what is your name")
-name = input()
-print("my name is " + name)
-print(64//3)
-print(3**3)
-num1 = input("pick a number: ")
-print("pick another number")
-num2 = input("pick another number: ")
-
-add = int(num1) + int(num2)
-
-print("The sum is: ")
-print(add)
-number1 = int(num1)
-number2 = int(num2)
-if number1 % number2 == 0:
-    print("number is even")
-elif number1 < number2 or number1<= 0:
-    print("num cannot be divided")
-elif not(number1 < number2 or number1 <= 0) :
-    print("divisible")
-elif number1 % number2 != 0 :
-    print("number is odd")
+# for i in range(100, 200, 10):
+#     print(i)
 
 
-age = input("Enter age:")
-if int(age) < 18:
-    print("you are not of legal age")
-elif int(age) >= 18:
-    print("You are of legal age")
+# word = "book"
+# number_of_letters = len(word) # Notice this can now work for any string
 
-for x in range(10):
-    print(x)
-res = 0
-count = 1
-while count <= 100:
-    res += count
-    count+=1
-print("The sum of numbers from 1 to 100 is:", res)
-res = 0
-while True:
-    num = int(input("Enter a number: "))
-    if num == 0:
-        break
-    res += num
-fruits = ["apple", "pear", 3]
-fruits[1] = "banana"
-fruits.append('strawberry')
-print(fruits)
-fruits[0:1] = 's'
-print(fruits)
-for fruit in fruits:
-    if fruit == 3:
-        print("seen")
-    else:
-        print("not seen")
-fruits = ("apple", "pear", 3)
-position = (0,1)
-color = (255,255,255)
-print(type(color))
-print(fruits)
-text = input("Enter something: ")
-print(text.strip())
-print(len(text))
-print(text.lower())
-print(text.upper())
-print(text.capitalize)
-print(text.split())
-text = "I am a girl named fiona"
-print(text[0::3])
-def add(x):
-    return (x + 2)**2
+# for index in range(number_of_letters):
+#     letter = word[index]
+#     print(f"Index: {index} Letter: {letter}")
 
-def sub(x):
-    return (x - 2)**2
+# value = 10
+# while value < 20:
+#    value = value + 1
+# print(value)
 
-def prtstr(str):
-    print(str)
+# animal = "dog"
+# while animal == "dog":
+#    print("a")
+#    animal = "cat"
+#    print("b")
+# print("c")
 
-def acc(mass, force):
-    a = mass * force
-    return acc
-prtstr("hello")
-number = add(7)
-num = sub(7)
-print(number, num)
-nickname = ["RJ", 179, "Shooky", 174, "Mang", 177, "Koya", 181, "Chimmy", 174, "Tata", 179, "Cooky", 174]
-# nickname.remove()
-nickname[0:2] = ["new_name", 1.75]
-del nickname[2]
-# Copying Lists: Simply using the equals sign (=) copies the reference to the list, not the actual list. To create an independent copy, use the list() function or slicing:
-y = list(nickname)  # or x[:]
-print(nickname[8:10])
-print(nickname)
-animal_emoticon = [["Hamster", 33], ["Cat", 33], ["Squirrel", 32], ["Koala", 31], ["Chick", 30], ["Tiger", 30], ["Rabbit", 28]]
-print(animal_emoticon)
-
-areas = ["hallway", 11.25, "kitchen", 18.0, "chill zone", 20.0, "bedroom", 10.75, "bathroom", 10.50]
-# Add poolhouse data to areas, new list is areas_1
-areas_1 = areas + ["poolhouse", 24.5]
-# Add garage data to areas_1, new list is areas_2
-areas_2 = areas_1 +["garage", 15.45]
-
-# print(areas_2)
-n = round(15.45, 1)
-print(pow(3,3))
-print(type(n))
-print(n)
-# help(round)
-
-r = [10, 15, 14.1, 2, 5.7]
-sort = sorted(r, reverse=True)
-print(sort)
-
-pasta_type = "pasta"
-
-# Update pasta type to be more specific
-pasta_type = pasta_type.replace("pasta","fusilli pasta" )
-
-ingredient_one = "BASIL"
-
-# Standardize ingredient_none to lowercase
-ingredient = ingredient_one.lower()
-
-print(pasta_type)
-print(ingredient)
-
-# dictionaries are unordered
-
-bangtan = {"Rm": 31,
-            "Jin": 33,
-            "Suga": 33,
-            "J-hope": 32,
-            "Jimin": 30,
-            "V": 30,
-            "Jk": 28}
-bangtan["Mr Lee"] = 40
-# print(bangtan["Suga"])
-print(bangtan.keys())
-print(bangtan.values())
-print(bangtan.items())
-for names, val in bangtan.items():
-    print(names, ":", val, "old")
-if "Jimin" in bangtan.keys():
-    print("True")
-elif "Jimin" not in bangtan.items():
-    print("false")
-bulletproof = ["im", "Kim", "Min", "Jung", "Park", "Kim", "Jeon"]
-print(bulletproof.index("Jung"))
-for name in bulletproof:
-    if "Fiona" not in bulletproof:
-        bulletproof.append("Fiona")
-print(bulletproof)
-if bulletproof[0] != "Kim":
-    print("Error")
-print(type(bulletproof))
-print(bulletproof)
-b_boys = set(bulletproof)
-print(type(b_boys))
-b = tuple(bulletproof)
-b_boys.add("Lee")
-print(type(b))
-print(sorted(b, reverse=True))
-
-#  tuples are ordered but their values are constant, they have inde
-bangtan_boys = ("Rj", 179, "Shooky", 174, "Mang", 177, "Koya", 181, "Chimmy", 174, "Tata", 179, "Cooky", 174)
-print(bangtan_boys[8])
-print(bangtan_boys)
-
-from numpy import array
-print(float("1.5"))
-
-from openai import OpenAI
-client = OpenAI()
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    max_completion_tokens=100,
-  
-    # Enter your prompt
-    messages=[{"role": "user", "content": "Suggest tasks I could automate with the OpenAI API in my job."}]
-)
-
-print(response.choices[0].message.content)
-
-client = OpenAI(api_key="<OPENAI_API_TOKEN>")
-
-response = client.chat.completions.create(
-   model="gpt-4o-mini",
-   # Add in the extra examples and responses
-   messages=[
-       {"role": "system", "content": "You are a helpful Geography tutor that generates concise summaries for different countries."},
-       {"role": "user", "content": "Give me a quick summary of Portugal."},
-       {"role": "assistant", "content": "Portugal is a country in Europe that borders Spain. The capital city is Lisboa."},
-       {"role": "user", "content": "Talk about Chinese cuisine"},
-       {"role": "assistant", "content": "Focus on food that with ingredient available in most part of the world"},
-       {"role": "user", "content": "Where are the must visit places when touring Nigeria"},
-       {"role": "assistant", "content": "include the safely level of each place from bad to good (1-5)"},
-       {"role": "user", "content": "How many hours flight from Nigeria to China"},
-       {"role": "assistant", "content": "include all stops and which airline, flght time is the best"},
-       {"role": "user", "content": "Give me a quick summary of Greece."}
-   ]
-)
-car_count = 20
-car_count = "fish"
-print("There are {} cars on the road.".format(car_count))
-# print(response.choices[0].message.content)
-import string
-print(string.ascii_lowercase)
-print(string.digits)
-print(string.punctuation)
-
-area = 3
-print(f"The area of the square is: {area / 10000} m^2")
-print(f"The area of the square is: {area} / 10000 m^2")
-length = int(input("What is the length of rectangle? "))
+# while value < 20:
+#    value = value + 1
+# print(value)
 
 
-"""
-Author: Brother Burton
+# value = 20
+# while value < 20:
+#    value = value + 1
+# print(value)
+from docx import Document
+from docx.shared import Inches, Pt, RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT
+from docx.enum.section import WD_SECTION
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+doc = Document()
+sec = doc.sections[0]
+sec.right_margin = Inches(0.35)
 
-Purpose: Determine and display letter grades, including +/-.
-"""
+# Base font
+styles = doc.styles
+styles["Normal"].font.name = "Aptos"
+styles["Normal"].font.size = Pt(8.5)
+styles["Normal"].font.color.rgb = RGBColor(45,45,45)
+styles["Normal"].paragraph_format.space_after = Pt(1.5)
+styles["Normal"].paragraph_format.line_spacing = 1.0
 
-grade = int(input("What is your grade percent? "))
+DARK = "2F3236"
+LIGHT = "E7E8E9"
+WHITE = RGBColor(255,255,255)
+ACCENT = RGBColor(47,50,54)
 
-if grade >= 90:
-    letter = "A"
-elif grade >= 80:
-    letter = "B"
-elif grade >= 70:
-    letter = "C"
-elif grade >= 60:
-    letter = "D"
-else:
-    letter = "F"
+def set_cell_shading(cell, fill):
+    tcPr = cell._tc.get_or_add_tcPr()
+    shd = OxmlElement("w:shd")
+    shd.set(qn("w:fill"), fill)
+    tcPr.append(shd)
 
-# Adding + or -
-sign = ""
+def set_cell_margins(cell, top=70, start=100, bottom=70, end=100):
+    tc = cell._tc
+    tcPr = tc.get_or_add_tcPr()
+    tcMar = tcPr.first_child_found_in("w:tcMar")
+    if tcMar is None:
+        tcMar = OxmlElement("w:tcMar")
+        tcPr.append(tcMar)
+    for m, v in [("top",top),("start",start),("bottom",bottom),("end",end)]:
+        node = tcMar.find(qn(f"w:{m}"))
+        if node is None:
+            node = OxmlElement(f"w:{m}")
+            tcMar.append(node)
+        node.set(qn("w:w"), str(v))
+        node.set(qn("w:type"), "dxa")
 
-last_digit = grade % 10
+def remove_table_borders(table):
+    tblPr = table._tbl.tblPr
+    borders = tblPr.first_child_found_in("w:tblBorders")
+    if borders is None:
+        borders = OxmlElement("w:tblBorders")
+        tblPr.append(borders)
+    for edge in ("top","left","bottom","right","insideH","insideV"):
+        el = OxmlElement(f"w:{edge}")
+        el.set(qn("w:val"), "nil")
+        borders.append(el)
 
-if last_digit >= 7:
-    sign = "+"
-elif last_digit < 3:
-    sign = "-"
-else:
-    sign = ""
+def header(cell, text):
+    p = cell.paragraphs[0]
+    p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p.paragraph_format.space_before = Pt(0)
+    p.paragraph_format.space_after = Pt(0)
+    r = p.add_run(text)
+    r.bold = True
+    r.font.name = "Aptos"
+    r.font.size = Pt(10.5)
+    r.font.color.rgb = WHITE
+    set_cell_shading(cell, DARK)
+    set_cell_margins(cell, 80, 130, 80, 130)
 
-# Handle the A+ grades
-if grade >= 93:
-    sign = ""
+def add_line(cell, text, bold=False, size=8.5, space=1.5):
+    p = cell.add_paragraph()
+    p.paragraph_format.space_after = Pt(space)
+    p.paragraph_format.line_spacing = 1.0
+    r = p.add_run(text)
+    r.bold = bold
+    r.font.name = "Aptos"
+    r.font.size = Pt(size)
+    return p
 
-# Handle the F+ and F- grades
-if letter == "F":
-    sign = ""
+# Main two-column structure
+table = doc.add_table(rows=1, cols=2)
+table.autofit = False
+remove_table_borders(table)
+left, right = table.rows[0].cells
+left.width = Inches(2.55)
+right.width = Inches(4.65)
+set_cell_margins(left, 120, 130, 80, 130)
+set_cell_margins(right, 120, 150, 80, 150)
+left.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
+right.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
 
-print(f"Your letter grade is: {letter}{sign}")
-if grade >= 80:
-    letter = "B"
-elif grade >= 90:
-    letter = "A"
-if grade >= 70:
-    print("Congratulations! You passed the class!")
-else:
-    print("Stay focused and you'll get it next time!")
+# LEFT COLUMN — template-inspired
+p = left.paragraphs[0]
+p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+p.paragraph_format.space_after = Pt(3)
+r = p.add_run("PHOTO")
+r.bold = True
+r.font.size = Pt(8)
+r.font.color.rgb = RGBColor(130,130,130)
+
+# Photo placeholder
+photo = left.add_table(rows=1, cols=1)
+photo.autofit = False
+photo.cell(0,0).width = Inches(1.75)
+photo.cell(0,0).height = Inches(1.65)
+set_cell_shading(photo.cell(0,0), "F5F5F5")
+set_cell_margins(photo.cell(0,0), 450, 50, 450, 50)
+pp = photo.cell(0,0).paragraphs[0]
+pp.alignment = WD_ALIGN_PARAGRAPH.CENTER
+rr = pp.add_run("Insert photo")
+rr.font.size = Pt(8)
+rr.font.color.rgb = RGBColor(130,130,130)
+remove_table_borders(photo)
+
+# Name
+p = left.add_paragraph()
+p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+p.paragraph_format.space_before = Pt(8)
+p.paragraph_format.space_after = Pt(1)
+r = p.add_run("FAVOUR SAMUEL NYA")
+r.bold = True
+r.font.size = Pt(14)
+r.font.color.rgb = ACCENT
+
+p = left.add_paragraph()
+p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+p.paragraph_format.space_after = Pt(9)
+r = p.add_run("JUNIOR SOFTWARE DEVELOPER")
+r.bold = True
+r.font.size = Pt(8.5)
+
+header(left, "✆  CONTACT")
+add_line(left, "Email: favoursamuelnya@gmail.com")
+add_line(left, "Phone: [ADD PHONE NUMBER]")
+add_line(left, "Location: Lagos, Nigeria")
+add_line(left, "LinkedIn: linkedin.com/in/favour-nya-a5b30525")
+add_line(left, "GitHub: [ADD GITHUB URL]")
+
+p = left.add_paragraph()
+p.paragraph_format.space_before = Pt(8)
+p.paragraph_format.space_after = Pt(3)
+r = p.add_run("⚙  SKILLS")
+r.bold = True
+r.font.size = Pt(10.5)
+r.font.color.rgb = WHITE
+set_cell_shading(p._p.getparent().getparent().cells[0] if False else left, DARK)
+# Undo: instead create a compact dark skill label via paragraph shading
+pPr = p._p.get_or_add_pPr()
+shd = OxmlElement("w:shd"); shd.set(qn("w:fill"), DARK); pPr.append(shd)
+for label, value in [
+    ("Languages", "Python, Go, SQL"),
+    ("Backend", "REST APIs, HTTP, JSON, FastAPI"),
+    ("Databases", "PostgreSQL, MySQL"),
+    ("Data", "pandas, NumPy, Excel"),
+    ("Tools", "Git, GitHub, Linux, Docker"),
+    ("AI", "Prompt engineering, AI integration"),
+]:
+    add_line(left, f"{label}: {value}")
+
+# RIGHT COLUMN
+header(right, "👤  ABOUT ME")
+add_line(right,
+          "Junior software developer with hands-on experience building backend applications and "
+          "data-driven tools using Python, Go, SQL, REST APIs, Git, Linux, and Docker. Currently "
+          "completing intensive AI-native full-stack development training while pursuing a Bachelor’s "
+          "degree in Information Technology. Experienced in data reconciliation, cleaning, reporting, "
+          "and high-volume spreadsheet work through the Nigerian Civil Aviation Authority.")
+
+header(right, "🎓  EDUCATION")
+add_line(right, "Bachelor’s Degree, Information Technology", True, 9.0, 0.5)
+add_line(right, "Brigham Young University–Pathway | Expected Mar 2029", size=8)
+add_line(right, "Ordinary National Diploma, Computer Science & Information Technology", True, 9.0, 0.5)
+add_line(right, "Petroleum Training Institute | Dec 2024", size=8)
+add_line(right, "O’ Level", True, 9.0, 0.5)
+add_line(right, "Federal Science and Technical College | Aug 2022", size=8)
+
+header(right, "💼  WORK EXPERIENCE")
+add_line(right, "AI-Native Full-Stack Development Fellow — Learn2Earn / 01 Edu", True, 9.0, 0.5)
+add_line(right, "Feb 2026 – Present", size=8)
+add_line(right, "• Build project-based applications with Python, Go, SQL, APIs, Git, Linux, Docker, and AI integration.")
+add_line(right, "• Develop backend services and practice requirements analysis, debugging, and collaborative software development.")
+add_line(right, "• Apply database design, REST API concepts, version control, and AI-assisted development workflows.")
+
+add_line(right, "Data Analysis Intern — Nigerian Civil Aviation Authority (NCAA)", True, 9.0, 0.5)
+add_line(right, "Internship", size=8)
+add_line(right, "• Prepared and reconciled airline account, invoice, and passenger ticket-sales records.")
+add_line(right, "• Cleaned, organized, and summarized high-volume Excel datasets for monthly revenue reporting.")
+add_line(right, "• Analyzed national and international airline revenue data and produced reporting summaries.")
+
+header(right, "🛠  PROJECTS")
+add_line(right, "Task Management REST API | Go", True, 9.0, 0.5)
+add_line(right, "• Built a backend API for creating, retrieving, and deleting tasks using Go’s standard HTTP tooling.")
+add_line(right, "Ascii-Art-Web | Go", True, 9.0, 0.5)
+add_line(right, "• Developed a web application using HTTP handlers and templates; containerized it with Docker.")
+add_line(right, "Student Management System | Python + PostgreSQL", True, 9.0, 0.5)
+add_line(right, "• Built a CLI student database and wrote SQL queries for filtering, grouping, aggregation, and statistics.")
+add_line(right, "Mad Libs | Python", True, 9.0, 0.5)
+add_line(right, "• Developed an interactive CLI program with multiple choices, case-insensitive input, and distinct outcomes.")
+
+header(right, "📜  CERTIFICATIONS")
+add_line(right, "DataCamp: Introduction to SQL • Introduction to Python • Intermediate Python • Prompt Engineering")
+
+# Footer note
+p = doc.add_paragraph()
+p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+p.paragraph_format.space_before = Pt(3)
+r = p.add_run("Replace bracketed fields and add any missing information before submitting.")
+r.italic = True
+r.font.size = Pt(7.5)
+r.font.color.rgb = RGBColor(110,110,110)
+
+path = "jpeg(11)"
+doc.save(path)
+print(path)
